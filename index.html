@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/notesfevicon.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">
+        <img src="images/title.png" alt="error">
+        <h1>To-Do List</h1>
+    </div>
+
+    <div class="taskboxes">
+        <div class="pendingbox">
+            <h2>Pending Tasks</h2>
+           
+        </div>
+        <div class="newbox">
+            <div class="newtask">
+                <div class="newtasktitle">
+                    <input class="newtasktitleinput" id="inputtitle" value="" type="text" placeholder="Title">
+                </div>
+                <div class="newtaskcontent">
+                    <textarea class="taskcontent" id="inputcontent" value="" name="context"
+                        placeholder="Enter the Context here" cols="29" rows="10"></textarea>
+                </div>
+                <div class="newtaskdate">
+                    DATE : <input class="taskdate" id="inputdate" name="date" value="" type="date">
+                </div>
+            </div>
+            <button class="newtasksavebutton" onclick="handleclick()">Save</button>
+        </div>
+
+        <div class="completedbox">
+            <h2>Completed Tasks</h2>
+           
+        </div>
+        <script src="index.js"></script>
+    </div>    
+</body>
+
+</html>
